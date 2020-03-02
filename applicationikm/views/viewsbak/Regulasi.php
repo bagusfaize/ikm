@@ -1,5 +1,4 @@
 <body>
-
 <section id="header-map">
   <div id="map">
   </div>
@@ -24,7 +23,6 @@
     </div>
   </div>
 </section>
-
 
 <?php foreach($RegulasiData as $row){ ?>
 <!-- Modal -->
@@ -95,6 +93,5 @@
     <a href="https://www.kepri.bps.go.id"><img src="bps-logo.png" alt=""/></a>
   </div>
 </section>
-
 </body>
 </html>

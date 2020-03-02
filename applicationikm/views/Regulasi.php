@@ -12,9 +12,9 @@
         <h4 class="section-title">Regulasi</h4>
         <div class="row" style="padding: 10px;">
           <?php foreach($RegulasiData as $row){ ?>
-          <div class="col-md-12 mb-2 card" style="padding: 10px;">
-            <h5><b><?php echo $row['judul'].' '.$row['nomer']; ?></b></h5> 
-            <h6><?php echo $row['tentang']; ?></h6>
+          <div class="col-md-12 m-2 card p-3">
+            <h6><b><?php echo $row['judul'].' '.$row['nomer']; ?></b></h6> 
+            <p style="font-size:14px;"><?php echo $row['tentang']; ?></p>
             <br/>
             <div class="col-md-3 nopadding"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalRegulasi<?php echo $row['idx']; ?>">Detail</button></div>
           </div> 

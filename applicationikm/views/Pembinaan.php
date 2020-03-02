@@ -8,7 +8,7 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-md-12 news-section">
+      <div class="col-md-12 news-section pb-4">
         <?php echo form_open('pembinaan/search'); ?>
         <h4 class="section-title">Pembinaan</h4>
         <div class="row">
@@ -53,7 +53,7 @@
           <div class="col-md-1 nopadding">
             <div class="form-group">
               <label for="exampleFormControlSelect1"> &nbsp; &nbsp; &nbsp; &nbsp;</label>
-              <button type="submit" class="btn btn-success">Success</button>
+              <button type="submit" class="btn btn-info">Search</button>
             </div>
           </div>
         </div>
@@ -64,12 +64,21 @@
       <div class="col-md-12 news-section">
         <div class="row" style="padding: 10px;">
           <?php foreach($PembinaanData as $row){ ?>
-          <div class="col-md-12 mb-2 card" style="padding: 10px;">
-            <h5><?php echo $row['nama']; ?></h5> 
-            <div class="row" style="font-size: 15px;padding-bottom: 0px;">
-              <div class="col-md-2 col-sm-4 col-xs-4">Penyelenggara </div><div class="col-md-9 col-sm-8 col-xs-8">: <?php echo $row['penyelenggara']; ?></div>
-              <div class="col-md-2 col-sm-4 col-xs-4">Lokasi  </div><div class="col-md-9 col-sm-8 col-xs-8">: <?php echo $row['lokasi']; ?></div>
-              <div class="col-md-2 col-sm-4 col-xs-4">Tahun </div><div class="col-md-9 col-sm-8 col-xs-8">: <?php echo $row['th_anggaran']; ?></div>
+          <div class="col-md-12 mb-2 card p-3">
+            <h6><b><?php echo $row['nama']; ?></b></h6> 
+            <div style="font-size: 14px;padding-bottom: 0px;">
+              <div class="row pt-1">
+                <div class="col-4 col-sm-4 col-lg-2">Penyelenggara</div>
+                <div class="col-6 col-sm-6 col-lg-4">: <?php echo $row['penyelenggara']; ?></div>
+              </div>
+              <div class="row">
+                <div class="col-4 col-sm-4 col-lg-2">Lokasi</div>
+                <div class="col-6 col-sm-6 col-lg-4">: <?php echo $row['lokasi']; ?></div>
+              </div>
+              <div class="row">
+                <div class="col-4 col-sm-4 col-lg-2">Tahun</div>
+                <div class="col-6 col-sm-6 col-lg-4">: <?php echo $row['th_anggaran']; ?></div>
+              </div>
             </div><br/>
             <div class="col-md-3 nopadding"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalPembinaan<?php echo $row['idx']; ?>">Detail</button></div>
           </div> 

@@ -11,7 +11,7 @@
       <div class="col-md-8 news-section">
         <h4 class="section-title">Tugas Pokok dan Fungsi</h4>
         <div class="row">
-          <div class="col-md-6 mb-4"><?php echo $TPDF; ?></div>              
+          <div class="col-md-6 mb-4 tpdf"><?php echo $TPDF; ?></div>
           <div class="col-md-12 mt-4">
             <h4 class="section-title">foto dan video</h4>
             <div class="media-slider">
@@ -40,7 +40,7 @@
           <a class="twitter-timeline"
             href="https://twitter.com/IKM_Kepriprov?ref_src=twsrc%5Etfw"
             data-tweet-limit="2"
-            >Tweets by IKM_Kepriprov</a>
+          >Tweets by IKM_Kepriprov</a>
         </div>
       </div>
     </div>
@@ -53,6 +53,5 @@
     <?php } ?>
   </div>
 </section>
-
 </body>
 </html>

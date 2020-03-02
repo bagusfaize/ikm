@@ -158,10 +158,10 @@
                   <?php echo anchor('adminpage/BeritaVideo', 'IKM @Video', 'class="dropdown-item"') ?>
                 </div>
               </li>
-              <li class="nav-item active">
+              <!--<li class="nav-item active">
                 <a class="nav-link" href="#">Manage User Account</a>
               </li>
-              <!--<li class="nav-item dropdown">
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -176,7 +176,7 @@
                   <a class="dropdown-item" href="#">Petugas</a>
                   <a class="dropdown-item" href="#">Pegawai</a>
                 </div>
-              </li>-->
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -186,14 +186,14 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                   >Others</a
-                >
+                > 
                 <div class="dropdown-menu" aria-labelledby="dd_profile">
                   <a class="dropdown-item" href="#">Link</a>
                 </div>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#">Menu User</a>
-              </li>
+              </li>-->
               <li class="nav-item active">
                   <?php echo anchor('Login/Logout', 'Logout', 'class="nav-link"') ?>
               </li>

@@ -11,7 +11,7 @@
       <div class="col-md-8 news-section">
         <h4 class="section-title">Tugas Pokok dan Fungsi</h4>
         <div class="row">
-          <div class="col-md-12 mb-4"><?php echo $TPDF; ?></div>              
+          <div class="col-md-12 mb-4 tpdf"><?php echo $TPDF; ?></div>              
           <div class="col-md-12 mt-4">
             <h4 class="section-title">foto dan video</h4>
             <div class="media-slider">

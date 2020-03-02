@@ -10,13 +10,13 @@
           <div class="col-md-3">
             <h3>Regulasi</h3>
             <?php foreach($RegulasiData as $row){ ?>
-            <button type="button" class="btn footerModal nopadding" data-toggle="modal" data-target="#modalFooterRegulasi<?php echo $row['idx']; ?>"><?php echo $row['judul']; ?></button>
+            <button type="button" class="btn-footer footerModal nopadding" data-toggle="modal" data-target="#modalFooterRegulasi<?php echo $row['idx']; ?>"><?php echo $row['judul']; ?></button>
           <?php } ?>
           </div>
           <div class="col-md-3">
             <h3>Pembinaan</h3>
             <?php foreach($PembinaanData as $row){ ?>
-            <button type="button" class="btn footerModal nopadding" data-toggle="modal" data-target="#modalFooterPembinaan<?php echo $row['idx']; ?>"><?php echo $row['nama']; ?></button>
+            <button type="button" class="btn-footer footerModal nopadding" data-toggle="modal" data-target="#modalFooterPembinaan<?php echo $row['idx']; ?>"><?php echo $row['nama']; ?></button>
           <?php } ?>
           </div>
           <div class="col-md-3">

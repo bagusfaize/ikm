@@ -234,7 +234,7 @@ function f_tgl($tgl){
           <div class="col-md-12 mb-4">
             <div class="panel panel-default pnl-pad" style="border-top:none;">
                 <div class="panel pnl-green">
-                    <div class="panel-heading hgreen" >
+                    <div class="panel-heading hgreen mb-3" >
                         REKAPITULASI DATA IKM KEPRI*)</div>
                     <div class="panel-body">
                         <?php $kategori=array(1,2,3,4,5,6,7);
@@ -275,7 +275,7 @@ function f_tgl($tgl){
                         
                         ?>
                         <div class="table-responsive">
-                        <table style="width:100%">
+                        <table style="width:100%" class="table">
                             <tr>
                             <th class="header" style="border-left:none">KATEGORI INDUSTRI</th>
                             <th class="header">BINTAN</th>
@@ -319,13 +319,13 @@ function f_tgl($tgl){
                         </tr>
                         </table>
             </div>
-                       <br>
                         <p class="nb"> *) Jumlah data bersifat sementara (dalam proses updating)</p>
+                        <br>
                     </div>
                 </div>
                 <h4 class="section-title">Data Pertumbuhan IKM</h4>
                 <div class="panel pnl-green">
-                    <div class="panel-heading hgreen">
+                    <div class="panel-heading hgreen mb-3">
                         DATA PERTUMBUHAN IKM PROVINSI KEPULAUAN RIAU*)</div>
                     <div class="panel-body">
                         
@@ -393,7 +393,7 @@ function f_tgl($tgl){
                         
                         
                         <div class="table-responsive">
-                        <table style="width:100%">
+                        <table style="width:100%" class="table">
                             <tr>
                             <th class="no_border">TAHUN</th><th>&nbsp;</th>
                             <th colspan="2" class="no_border">BINTAN</td><th>&nbsp;</th>

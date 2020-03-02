@@ -53,7 +53,11 @@ td.ct{
 
 }
 li.map.active,li.rekap.active {
-    background : grey;
+    background : #5BB85D;
+    width: 12px;
+    height: 12px;
+    border: 1px solid transparent !important;
+    padding :.05em;
 }
 
 div.container.slider{
@@ -72,13 +76,20 @@ div.container.slider{
 
 
 td.rekap {
-
+    font-size:12px;
     padding-left : 10px;
     padding-top : 5px;
     width: 280px;
     text-align:left;
 
 }
+td.rekap-info{
+    font-size:10px;
+    padding-left : 10px;
+    padding-top : 5px;
+    width: 280px;
+    text-align:left;
+
 li.rekap,li.rekap.active {
     margin-bottom :-40px;
 
@@ -144,7 +155,7 @@ p {
 </style>
 </head>
 <body> 
-<div style="margin-top: -20px;width:100%; padding: 0px">
+<div style="margin-top: 80px; width:100%; padding: 0px">
 
   <div class="col-lg-12" style="padding: 0px">
 
@@ -431,7 +442,7 @@ function initialize() {
                     <div class="panel-body">
                         <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                               <!-- Indicators -->
-                              <ol class="carousel-indicators" id="rekapol">
+                              <ol class="carousel-indicators" id="rekapol" style="bottom:-37px;">
 
                                 <?php foreach($FotoNVideo as $key =>$row){ ?>
                                   <li data-target="#myCarousel3" data-slide-to="<?php echo $key; ?>" class="rekap active"></li>
@@ -457,12 +468,12 @@ function initialize() {
                             <?php } ?>
                         </div>
                       </div>
-            <a class="left carousel-control" href="#myCarousel3" data-slide="prev" style="background:transparent">
-              <span class="fa fa-chevron-left"></span>
+            <a class="left carousel-control" href="#myCarousel3" data-slide="prev" style="background:transparent;bottom:11px;">
+              <span class="fa fa-chevron-left" style="color:#5BB85D;"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel3" data-slide="next" style="background:transparent">
-              <span class="fa fa-chevron-right"></span>
+            <a class="right carousel-control" href="#myCarousel3" data-slide="next" style="background:transparent;bottom:11px;">
+              <span class="fa fa-chevron-right" style="color:#5BB85D;"></span>
               <span class="sr-only">Next</span>
             </a>
                    </div>
@@ -471,11 +482,11 @@ function initialize() {
           </div>
           <div class="col-md-4 table-ikm">
               <div class="panel panel-primary">
-    <div class="panel-heading" style="font-weight:bold">REKAPITULASI DATA*</div>
+    <div class="panel-heading" style="font-weight:bold; color:white">REKAPITULASI DATA*</div>
     <div class="panel-body">
     <div id="myCarousel2" class="carousel slide" data-ride="carousel">
      <!-- Indicators -->
-    <ol class="carousel-indicators" id="rekapol">
+    <ol class="carousel-indicators" id="rekapol" style="bottom:-37px">
       <li data-target="#myCarousel2" data-slide-to="0" class="rekap active"></li>
       <li data-target="#myCarousel2" data-slide-to="1" class="rekap"></li>
 
@@ -497,7 +508,7 @@ function initialize() {
             $n_natuna=f_count("select * from 1_profil where kab='3' and chver='1'");
 
                 ?>
-                            <div class="item active" style="height:350px;font-size:14px;margin-bottom:10px;">
+                            <div class="item active" style="height:370px;font-size:14px;margin-bottom:10px;">
                     <div class="panel panel-info" style="border:transparent">
                     <div class="panel-heading">PROPINSI KEPULAUAN RIAU</div>
 
@@ -543,12 +554,12 @@ function initialize() {
                       <td align="right"><b><? $sumriau1=$npangan+$nsandang+$n_ibk+$n_iak+$n_ilm+$n_ikb+$n_iai;echo $sumriau1;?></b></td>
                   </tr>
                   <tr>
-                      <td colspan="3" class="rekap" >*) Jumlah data masih bersifat sementara(dalam proses updating)</td>
+                      <td colspan="3" class="rekap-info" >*) Jumlah data masih bersifat sementara(dalam proses updating)</td>
                   </tr>
                   </table>
               </div></div>
 
-              <div class="item" style="height:350px;font-size:14px;margin-bottom:10px;">
+              <div class="item" style="height:370px;font-size:14px;margin-bottom:10px;">
                     <div class="panel panel-info" style="border:transparent">
                     <div class="panel-heading">PROPINSI KEPULAUAN RIAU</div>
 
@@ -594,17 +605,17 @@ function initialize() {
                       <td align="right"><b><? $sumriau2=$n_bintan+$n_karimun+$n_natuna+$n_lingga+$n_anambas+$n_batam+$n_tpi;echo $sumriau2;?></b></td>
                   </tr>
                   <tr>
-                      <td colspan="3" class="rekap" >*) Jumlah data masih bersifat sementara(dalam proses updating)</td>
+                      <td colspan="3" class="rekap-info" >*) Jumlah data masih bersifat sementara(dalam proses updating)</td>
                   </tr>
                   </table>
               </div></div>
             </div>
-            <a class="left carousel-control" href="#myCarousel2" data-slide="prev" style="background:transparent">
-              <span class="fa fa-chevron-left"></span>
+            <a class="left carousel-control" href="#myCarousel2" data-slide="prev" style="background:transparent;bottom:-32px;">
+              <span class="fa fa-chevron-left" style="color:#5BB85D;"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel2" data-slide="next" style="background:transparent">
-              <span class="fa fa-chevron-right"></span>
+            <a class="right carousel-control" href="#myCarousel2" data-slide="next" style="background:transparent;bottom:-32px">
+              <span class="fa fa-chevron-right" style="color:#5BB85D;"></span>
               <span class="sr-only">Next</span>
             </a>
         </div>
@@ -625,7 +636,7 @@ function initialize() {
       </div>
     </section>
     <section class="partner">
-      <div class="container">
+      <div class="container pt-5">
         <?php foreach($SponsorshipLink as $row){ ?>
         <a href="<?php echo $row['alamat']; ?>"><img src="<?php echo ASSET_PATH; ?>/assets/<?php echo $row['file']; ?>" alt=""/></a>
         <?php } ?>
